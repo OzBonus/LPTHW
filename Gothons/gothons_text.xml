@@ -27,7 +27,7 @@
         <pod>
             <init>Light from the torches flickers across the piles of gold and gems scattered around the chamber. From seemingly all around you comes a rumbling. Something great and eldritch has awoken and is slithering through the shadows. Shall you gird your loins and _ATTACK_ the darkness or _WET_ your pants? </init>
             <back>So, you've come to realize that you can't hide from your destiny after all? Go _FORWARD_ unless you plan to shamefully _RETREAT_ again.</back>
-            <die>You wee-soaked corpse is a tangy treat for the dragon. It probably eats a princess too later. You're mega dead.</die>
+            <die>Your wee-soaked corpse is a tangy treat for the dragon. It probably eats a princess too later. You're mega dead.</die>
             <live>Remarkably, this actually works. It's so remarkable that it simply can't expressed in words. So, now that you've killed the dragon, you might as well get into the _ESCAPE_ pod and get off this spaceship. By the way, all of the other rooms are on fire now.</live>
             <error>Try typing something else, cowboy.</error>
         </pod>
