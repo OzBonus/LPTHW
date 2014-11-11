@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <title>Attack of the Gothons from Planet X</title>
+    <about>This is an adventure game that I made while making my way through "Learn Python the Hard Way" by Zed A. Shaw. During the course of this game you will tasked with escaping from a spaceship that has been attacked by the titular Gothons from Planet X. Good luck! Because this is intended as a learning exercise rather than a proper game (or perhaps it is just a game that I am playing with myself) the commands needed to proceed are always clearly formatted like _THIS_. Please do not actually include the underscores because I might not get around to setting up a proper parser. You can input _LOOK_ if you want to see the current room description again. Also, commands are not case-sensitive.</about>
+    <scene>
+        <central>
+            <init>The bulkhead closes behind you with and you hear the emergency bolts slide into place within it, permanently sealing off the engineering stations which had been exposed to the vacuum of space. It's only a matter of time before the rest of the ship disintegrates. Your only chance is to make it to an escape pod at the other end of the ship. Unfortunately for you, there is a displeased-looking Gothon blocking the exit to the room beyond this central corridor. You could _ATTACK_ it with your bare hands or even try to _OUTSMART_ it.</init>
+            <back>You have returned to the central corridor, stepping over the Gothon's body as you come in. After reflecting on the transient nature of life for a moment you decide that maybe you should go _FORWARD_ into the next room.</back>
+            <die>Come to think of it, attempting to bludgeon a Grothon with your fists was a terrible idea. You have only a moment to reflect on this and the pain in your hands before being blasted away to your constituent atoms. You're dead, if you haven't realized it yet.</die>
+            <live>You craft a joke so witty the Grothon's mind is literally blown, splattering the contents of its cranium all over the corridor. It's best not to print the joke since I'm not adequately insured. You can now go _FORWARD_ into the next room.</live>
+            <error>What was that? Type ATTACK or OUTSMART in order proceed or die hilariously.</error>
+        </central>
+        <armory>
+            <init>You have entered the ship's armory. At least that was what you and your shipmates called it. In reality this was where you all kept your larping gear. Although you typically played a rogue, you decide that donning the paladin's gear (reinforced hazmat suit) and anointed scepter (metal pipe wrapped in duct tape) would serve you better given the circumstances. After wiggling into your holy raiments and giving your scepter a few practice swings you notice a Gothon taking a post-slaughter nap perilously close to the door to the next room. A brave paladin would attempt to _SMITE_ it, but your roguish instincts tell you to _SNEAK_ by.</init>
+            <back>You have come back to the armory. Unfortunately, you don't have time to multiclass so you'll have to remain a paladin for the time being. For now you can go _FORWARD_ to the next room or _RETREAT_ back, you coward.</back>
+            <die>This Grothon isn't as sleepy as it appeared to be at first glance. It is, in fact, on a lunch break and was wondering what it was going to eat until you came along. You're dead and being turned into space-poo.</die>
+            <live>You mightily smite the Grothon! More or less anyway. You thoroughly bruise its knee and it hobbles away after giving you a disapproving look. You may proceed _FORWARD_, brave and noble paladin. May the light show you the way!</live>
+            <error>What was that? Type SNEAK or SMITE in order to proceed or die horribly.</error>
+        </armory>
+        <bridge>
+            <init>As you enter the bridge a Grothon leaps from the shadows and scores a critical hit! You may _STRIKE_ back at your foe or _QUAFF_ a potion.</init>
+            <back>The bridge of the ship is still here. Or at least you think it is. Who really knows what's real, man? You could continue _FORWARD_ or _RETREAT_, but in the end, does what does it even matter?</back>
+            <die>You dodge, weave, spin, pirouette, and otherwise bring yourself into position to kill your, but the dice do not fall in your favor. Critical failure. You drop your weapon and then take a good whooping. You're kind of dead.</die>
+            <live>What you thought was a healing potion turned out to be a potion of frost giant strength. Your failure to accurately label your phials won't be your downfall today, however, as you put your newfound strength to good use buy turning to the Grothon (who was just trying to pay his way through college, you know) into meat marmalade. Go _FORWARD_ now into the dreaded lair of the dragon to find the legendary Eskaype P'ahd or _RETREAT_ if you need to visit the bathroom first.</live>
+            <error>Oops, I guess you made a typo.</error>
+        </bridge>
+        <pod>
+            <init>Light from the torches flickers across the piles of gold and gems scattered around the chamber. From seemingly all around you comes a rumbling. Something great and eldritch has awoken and is slithering through the shadows. Shall you gird your loins and _ATTACK_ the darkness or _WET_ your pants? </init>
+            <back>So, you've come to realize that you can't hide from your destiny after all? Go _FORWARD_ unless you plan to shamefully _RETREAT_ again.</back>
+            <die>You wee-soaked corpse is a tangy treat for the dragon. It probably eats a princess too later. You're mega dead.</die>
+            <live>Remarkably, this actually works. It's so remarkable that it simply can't expressed in words. So, now that you've killed the dragon, you might as well get into the _ESCAPE_ pod and get off this spaceship. By the way, all of the other rooms are on fire now.</live>
+            <error>Try typing something else, cowboy.</error>
+        </pod>
+        <planet>
+            <init>The escape pod lands softly upon a space-hill covered with space-grass. Will you put on your _HELMET_ before venturing forth or will you just _OPEN_ the damn space-door?</init>
+            <back>You ought to file a bug report if you can see this.</back>
+            <die>Seriously? You're super dead.</die>
+            <live>Congratulations! You have completed this coding exercise! A winner is you!</live>
+            <error>Is you space-keyboard malfunctioning?</error>
+        </planet>
+    </scene>
+</doc>
