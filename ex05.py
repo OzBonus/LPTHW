@@ -3,7 +3,6 @@
 """ 
 Learn Python the Hard Way - Exercise 5
 More Variables and Printing
-Python 3 Version
 """
 
 PERSON = 'Christopher J. Perry'
