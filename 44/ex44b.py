@@ -33,7 +33,7 @@ SON.override()
 
 
 # The following is my own playing around.
-# I'm can't be certain that the following statements are accurate.
+# I can't be certain that the following statements are accurate.
 
 
 class Socrates(object):

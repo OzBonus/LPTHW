@@ -1,9 +1,9 @@
 #!/usr/bin/env
+# -*- coding: utf-8 -*-
 
 """ 
 Learn Python the Hard Way - Exercise 12
 Prompting People
-Python 3 Version
 """
 
 AGE    = input("How old are you? > ")
