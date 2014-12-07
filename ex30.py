@@ -23,5 +23,3 @@ elif BUSES < CARS:
     print "Maybe we could still take the buses."
 else:
     print "Fine! Let's just stay home!"
-
-# Extra stuff below.
