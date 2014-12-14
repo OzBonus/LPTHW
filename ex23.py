@@ -8,6 +8,7 @@ Read Some Code
 
 import webbrowser
 import collections
+from sys import exit
 
 
 URLS = collections.OrderedDict()
