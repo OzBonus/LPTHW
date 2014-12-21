@@ -74,7 +74,7 @@ def broom_closet():
         next = raw_input("> ")
 
         if next == "1" and not light_on:
-            dead("You poke yourself on a rusty nail and get super tetanus.")
+            dead("Scratched by a rusty nail, you get tetanus.")
         
         elif next == "1" and light_on:
             print "You already turned on the light!"
@@ -84,10 +84,10 @@ def broom_closet():
             light_on = True
 
         elif next == "2" and light_on:
-            dead("A second tug on the string collapses the ceiling on you.")
+            dead("A second tug makes the ceiling collapse on you.")
 
         elif next == "3" and not light_on:
-            dead("You step into a bucket and are too embarrassed to go on.")
+            dead("You shit your pants and die of shame.")
 
         elif next == "3" and light_on:
             start()
@@ -160,8 +160,8 @@ def dead(why):
     print "    _-~                                     ~-_"
     print "   /                                           \\"
     print "  |                                             |"
-    print " |                                               |"
     print " |{: ^56}|".format("\033[41m"+why+"\033[0m")
+    print " |                                               |"
     print "|                    \033[41mGood job!\033[0m                    |"
     print "|                                                 |"
     print "|                                                 |"
@@ -169,7 +169,7 @@ def dead(why):
     print " |  |    _-------_               _-------_    |  |"
     print " |  |  /~         ~\           /~          \  |  |"
     print "  ||  |             |         |             |  ||"
-    print "  || |       \033[31m☺\033[0m       |       |       \033[31m☺\033[0m       | ||"
+    print "  || |               |       |               | ||"
     print "  || |              |         |              | ||"
     print "  |   \_           /           \           _/   |"
     print " |      ~~--_____-~    /~V~\    ~-_____--~~      |"
