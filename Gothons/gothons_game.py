@@ -31,29 +31,29 @@ class Scene(object):
 class Central(Scene):
 
     success = False
-    
+
     def enter(self):
-        
+
         if self.success == False:
             print WRAP.fill(XML.scene.central.init.string)
-        
+
         else:
             print WRAP.fill(XML.scene.central.back.string)
-        
+
         action = raw_input('> ')
-        
+
         if action == 'attack':
             print WRAP.fill(XML.scene.central.die.string)
             exit(1)
-        
+
         elif action == 'outsmart':
             print WRAP.fill(XML.scene.central.live.string)
             self.success = True
             direction = raw_input('> ')
-        
+
             if direction == 'forward':
                 return 'armory'
-        
+
         else:
             print WRAP.fill(XML.scene.central.error.string)
             print '\n'
@@ -66,54 +66,54 @@ class Armory(Scene):
     success = False
 
     def enter(self):
-        
+
         if self.success == False:
             print WRAP.fill(XML.scene.armory.init.string)
-        
+
         else:
             print WRAP.fill(XML.scene.armory.back.string)
-        
+
         action = raw_input('> ')
-        
+
         if action == 'sneak':
             print WRAP.fill(XML.scene.armory.die.string)
             exit(1)
-        
+
         elif action == 'smite':
             print WRAP.fill(XML.scene.armory.live.string)
             self.success = True
             direction = raw_input('> ')
-        
+
             if direction == 'forward':
                 return 'bridge'
-            
+
             elif direction == 'retreat':
                 return 'central'
-        
+
         else:
             print WRAP.fill(XML.scene.armory.error.string)
             print '\n'
             return 'armory'
 
-        
+
 class Bridge(Scene):
 
     success = False
 
-    def enter(self):    
-        
+    def enter(self):
+
         if self.success == False:
             print WRAP.fill(XML.scene.bridge.init.string)
-        
+
         else:
             print WRAP.fill(XML.scene.bridge.back.string)
-        
+
         action = raw_input('> ')
-        
+
         if action == 'strike':
             print WRAP.fill(XML.scene.bridge.die.string)
             exit(1)
-        
+
         elif action == 'quaff':
             print WRAP.fill(XML.scene.bridge.live.string)
             self.success = True
@@ -121,10 +121,10 @@ class Bridge(Scene):
 
             if direction == 'forward':
                 return 'pod'
-        
+
             elif direction == 'retreat':
                 return 'armory'
-        
+
         else:
             print WRAP.fill(XML.scene.bridge.error.string)
             print '\n'
@@ -134,21 +134,21 @@ class Bridge(Scene):
 class Pod(Scene):
 
     success = False
-    
-    def enter(self):    
-        
+
+    def enter(self):
+
         if self.success == False:
             print WRAP.fill(XML.scene.pod.init.string)
-        
+
         else:
             print WRAP.fill(XML.scene.pod.back.string)
-        
+
         action = raw_input('> ')
-        
+
         if action == 'wet':
             print WRAP.fill(XML.scene.pod.die.string)
             exit(1)
-        
+
         elif action == 'attack':
             print WRAP.fill(XML.scene.pod.live.string)
             self.success = True
@@ -156,7 +156,7 @@ class Pod(Scene):
 
             if direction == 'forward':
                 return 'planet'
-        
+    
             elif direction == 'retreat':
                 return 'bridge'
 
@@ -169,15 +169,15 @@ class Pod(Scene):
 class Planet(Scene):
 
     def enter(self):
-                
+
         print WRAP.fill(XML.scene.planet.init.string)
-        
+
         action = raw_input('> ')
-        
+
         if action == 'open':
             print WRAP.fill(XML.scene.planet.die.string)
             exit(1)
-        
+
         elif action == 'helmet':
             print WRAP.fill(XML.scene.planet.live.string)
             exit(1)
@@ -189,7 +189,7 @@ class Planet(Scene):
 
 
 class Map(object):
-    
+
     scenes = {
         'central': Central(),
         'armory': Armory(),
@@ -216,8 +216,6 @@ WRAP = TextWrapper()
 WRAP.initial_indent = '* '
 WRAP.fix_sentence_endings = True
 
-
 a_map = Map('central')
 a_game = Engine(a_map)
 a_game.play()
-
